@@ -1,19 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace VitecMVC3.Data.Migrations
+namespace VitecAPI.Migrations
 {
-    public partial class TestMigration : Migration
+    public partial class IdentitySchemeMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-          
+
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            //migrationBuilder.DropColumn(
-            //    name: "HasProduct",
-            //    table: "AspNetUsers");
+
         }
     }
 }
