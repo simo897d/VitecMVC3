@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -6,13 +6,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using VitecMVC3.Models;
 using VitecMVC3.ViewModels;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
-namespace VitecMVC3.Controllers {
+namespace VitecMVC3.Controllers {   
     public class AdministrationController : Controller {
         private readonly RoleManager<IdentityRole> roleManager;
 
         public AdministrationController(RoleManager<IdentityRole> _roleManager) {
-            _roleManager = roleManager;
+            roleManager = _roleManager;
         }
         [HttpGet]
         public IActionResult CreateRole() {
@@ -35,6 +37,12 @@ namespace VitecMVC3.Controllers {
                 }
             }
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult ListRoles() {
+            var roles = roleManager.Roles;
+            return View(roles);
         }
     }
 }

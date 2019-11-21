@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditRole</title>
+</head>
+<body>
+    <div class="card-footer">
+        <a asp-controller="Administration" asp-action="EditUsersInRole"
+           asp-route-roleId="@Model.Id" class="btn btn-primary">
+            Add or remove users from this role
+        </a>
+    </div>
+</body>
+</html>
