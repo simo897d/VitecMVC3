@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using VitecMVC3.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using VitecMVC3.Models;
 
 namespace VitecMVC3
 {
@@ -35,7 +36,7 @@ namespace VitecMVC3
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddDefaultIdentity<ApplicationUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 

@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@if(UserManager.GetUserAsync(User).Result.HasProduct == true) {
+        <h1>Dashboard</h1>
+} else {
+    <h1>Du har ikke noget produkt tilknyttet din bruger. Klik her for at få adgang til produkterne</h1>
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-controller="UserDashboard" asp-action="BuySubscriptionPage" title="BuyProduct">Køb Produkt</a>
+</li>
+}

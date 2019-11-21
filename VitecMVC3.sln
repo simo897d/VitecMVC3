@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VitecMVC3", "VitecMVC3\VitecMVC3.csproj", "{A4CAD09A-7797-4662-BEE5-C077B2FDEBD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VitecMVC3", "VitecMVC3\VitecMVC3.csproj", "{A4CAD09A-7797-4662-BEE5-C077B2FDEBD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VitecApi", "WebApplication1\VitecApi.csproj", "{A5712438-A3FF-4081-B494-E83FCC26BE89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VitecAPI", "VitecAPI\VitecAPI.csproj", "{82D70E02-FB65-45A9-95F7-B538F01589C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{A4CAD09A-7797-4662-BEE5-C077B2FDEBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4CAD09A-7797-4662-BEE5-C077B2FDEBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4CAD09A-7797-4662-BEE5-C077B2FDEBD8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5712438-A3FF-4081-B494-E83FCC26BE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5712438-A3FF-4081-B494-E83FCC26BE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5712438-A3FF-4081-B494-E83FCC26BE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5712438-A3FF-4081-B494-E83FCC26BE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D70E02-FB65-45A9-95F7-B538F01589C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D70E02-FB65-45A9-95F7-B538F01589C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D70E02-FB65-45A9-95F7-B538F01589C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D70E02-FB65-45A9-95F7-B538F01589C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
