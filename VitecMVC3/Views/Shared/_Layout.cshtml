@@ -25,10 +25,10 @@
 
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~css/slicknav.min.css" />
 
 
     <!-- Main Stylesheets-->
@@ -38,42 +38,6 @@
 
 
 <body>
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-
-    <!-- Header section -->
-    <header class="header-section clearfix">
-        <a href="index.html" class="site-logo">
-            <img src="~/img/home/Logo.png" alt="">
-        </a>
-        <div class="header-right">
-            <a href="#" class="hr-btn">Help</a>
-            <span>|</span>
-            @* Believe this code is in _LoginPartial. Might be wrong
-                    <div class="user-panel">
-                    <a href="" class="login">Login</a>
-                    <a href="" class="register">Create an account</a>
-                </div>*@
-        </div>
-        <ul class="main-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li>
-                <a href="#">Pages</a>
-                <ul class="sub-menu">
-                    <li><a href="category.html">Category</a></li>
-                </ul>
-            </li>
-            <li><a href="blog.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
-    <!-- Header section end -->
-
-
-    @* Old header (Standard .net core Header. Delete when template works)
             <header>
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
                 <div class="container">
@@ -95,7 +59,7 @@
                     </div>
                 </div>
             </nav>
-        </header>*@
+        </header>
     <div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
@@ -128,6 +92,7 @@
         </script>
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
 
     @RenderSection("Scripts", required: false)
 </body>
