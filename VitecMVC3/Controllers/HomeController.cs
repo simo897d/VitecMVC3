@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using VitecMVC3.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace VitecMVC3.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
 
