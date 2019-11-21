@@ -5,8 +5,8 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-@if(UserManager.GetUserAsync(User).Result.HasProduct == true) {
+@{var IsSubscribed = UserManager.GetUserAsync(User).Result.HasProduct; }
+ @if(IsSubscribed == true) {
         <h1>Dashboard</h1>
 } else {
     <h1>Du har ikke noget produkt tilknyttet din bruger. Klik her for at få adgang til produkterne</h1>
