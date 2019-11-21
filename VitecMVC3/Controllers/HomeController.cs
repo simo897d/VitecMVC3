@@ -15,15 +15,16 @@ namespace VitecMVC3.Controllers
     {
 
         public IActionResult Index() {
-            //using (HttpClient client = new HttpClient()) {
 
-            //    HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/products").Result;
-            //    response.EnsureSuccessStatusCode();
-            //    var responseBody = response.Content.ReadAsStringAsync().Result;
+            using (HttpClient client = new HttpClient()) {
 
-            //    var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
-            //}
-                return View();
+                HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Products").Result;
+                response.EnsureSuccessStatusCode();
+                var responseBody = response.Content.ReadAsStringAsync().Result;
+
+                var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
+                return View(model);
+            }
         }
 
         public IActionResult Privacy() {
