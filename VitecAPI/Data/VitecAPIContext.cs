@@ -14,5 +14,6 @@ namespace VitecAPI.Models
         }
 
         public DbSet<VitecAPI.Models.Product> Product { get; set; }
+        public DbSet<VitecAPI.Models.Subscription> Subscription { get; set; }
     }
 }

@@ -8,19 +8,25 @@ namespace VitecAPI.Data
 {
     public class SeedDatabase
     {
-        public static void Initialize(VitecAPIContext Context) {
+        public static void Initialize(VitecAPIContext Context)
+        {
             Context.Database.EnsureCreated();
 
-            if (Context.Product.Any()) {
+            if (Context.Subscription.Any())
+            {
                 return;
-            } else {
-                    Product product = new Product {
-                        Title = "CDOrd",
-                        Description = "Læse- og skriveværktøjet CD-ORD er kendt for at forløse ordblinde børn og voksnes potentiale for at læse, skrive og lære.",
-                        Price = 200,
-                        Picture = "Not found"
-                    };
-                Context.Add(product);
+            }
+            else
+            {
+                Subscription subscription = new Subscription
+                {
+                    SubscriptionType = "CDOrd",
+                    Description = "Læse- og skriveværktøjet CD-ORD er kendt for at forløse ordblinde børn og voksnes potentiale for at læse, skrive og lære.",
+                    Price = 200,
+                    StartDate = DateTime.Now,
+                    EndDate = DateTime.Now.AddMonths(1)
+                };
+                Context.Add(subscription);
                 Context.SaveChanges();
             }
         }

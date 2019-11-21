@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace VitecMVC3.Models
+namespace VitecAPI.Models
 {
     public class Subscription
     {
