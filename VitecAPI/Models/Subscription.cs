@@ -7,6 +7,7 @@ namespace VitecAPI.Models
 {
     public class Subscription
     {
+        public int ID { get; set; }
         public string SubscriptionType { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }

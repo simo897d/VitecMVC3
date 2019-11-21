@@ -23,7 +23,7 @@ namespace VitecMVC3.Controllers
                 var responseBody = response.Content.ReadAsStringAsync().Result;
 
                 var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
-                return View(model);
+            return View(model);
             }
         }
 
