@@ -1,7 +1,20 @@
-﻿
+﻿@model IEnumerable<VitecMVC3.Models.Subscription>
+
 @{
     ViewData["Title"] = "BuySubscriptionPage";
 }
 
 <h1>BuySubscriptionPage</h1>
 
+<div class="card-group">
+    @foreach(var sub in Model){
+    <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@sub.SubscriptionType</h5>
+            <p class="card-text">@sub.Description</p>
+            <p class="card-text"><small class="text-muted">@sub.Price</small></p>
+        </div>
+    </div>
+    }
+</div>
