@@ -18,15 +18,16 @@ namespace VitecMVC3.Controllers
 
         public IActionResult Index() {
 
-            //using (HttpClient client = new HttpClient()) {
+            using (HttpClient client = new HttpClient())
+            {
 
-            //    HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Products").Result;
-            //    response.EnsureSuccessStatusCode();
-            //    var responseBody = response.Content.ReadAsStringAsync().Result;
+                HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Products").Result;
+                response.EnsureSuccessStatusCode();
+                var responseBody = response.Content.ReadAsStringAsync().Result;
 
-            //    var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
-            //}
-            return View();
+                var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
+            return View(model);
+            }
         }
 
         public IActionResult Privacy() {
