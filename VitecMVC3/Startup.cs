@@ -37,11 +37,13 @@ namespace VitecMVC3 {
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddRoles<IdentityRole>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
 
+            
 
             services.AddMvc(options => {
                 var policy = new AuthorizationPolicyBuilder()

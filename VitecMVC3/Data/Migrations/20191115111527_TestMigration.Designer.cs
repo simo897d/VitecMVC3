@@ -150,7 +150,7 @@ namespace VitecMVC3.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
-                    b.Property<bool>("HasProduct");
+                   // b.Property<bool>("HasProduct");
 
                     b.Property<bool>("LockoutEnabled");
 

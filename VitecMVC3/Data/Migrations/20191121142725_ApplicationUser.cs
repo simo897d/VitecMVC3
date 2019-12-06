@@ -7,11 +7,11 @@ namespace VitecMVC3.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
 
-            migrationBuilder.AddColumn<bool>(
-                name: "HasProduct",
-                table: "AspNetUsers",
-                nullable: false,
-                defaultValue: false);
+            //migrationBuilder.AddColumn<bool>(
+            //    name: "HasProduct",
+            //    table: "AspNetUsers",
+            //    nullable: false,
+            //    defaultValue: false);
            
         }
 
