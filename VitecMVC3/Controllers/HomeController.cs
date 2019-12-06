@@ -8,23 +8,25 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using VitecMVC3.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace VitecMVC3.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
 
         public IActionResult Index() {
 
-            using (HttpClient client = new HttpClient()) {
+            //using (HttpClient client = new HttpClient()) {
 
-                HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Products").Result;
-                response.EnsureSuccessStatusCode();
-                var responseBody = response.Content.ReadAsStringAsync().Result;
+            //    HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Products").Result;
+            //    response.EnsureSuccessStatusCode();
+            //    var responseBody = response.Content.ReadAsStringAsync().Result;
 
-                var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
-            return View(model);
-            }
+            //    var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
+            //}
+            return View();
         }
 
         public IActionResult Privacy() {
