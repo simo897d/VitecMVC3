@@ -15,19 +15,30 @@ namespace VitecMVC3.Controllers
     [AllowAnonymous]
     public class HomeController : Controller
     {
-
+        
         public IActionResult Index() {
 
-            using (HttpClient client = new HttpClient())
-            {
 
-                HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Products").Result;
-                response.EnsureSuccessStatusCode();
-                var responseBody = response.Content.ReadAsStringAsync().Result;
+            try {
 
-                var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
-            return View(model);
+                using (HttpClient client = new HttpClient()) {
+                    HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Products").Result;
+                    response.EnsureSuccessStatusCode();
+                    var responseBody = response.Content.ReadAsStringAsync().Result;
+
+                    var model = JsonConvert.DeserializeObject<List<Products>>(responseBody);
+
+                    if (!response.IsSuccessStatusCode) {
+                        ViewBag("Kan ikke forbinde til API");
+                        return View();
+                    }
+                    return View(model);
+                }
+            } catch {
+                return View();
             }
+            
+
         }
 
         public IActionResult Privacy() {

@@ -22,6 +22,14 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Production": {
+      "commandName": "Production",
+      "launchBrowser": true,
+      "applicationUrl": "vitecprivat.se",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT" : "Production"
+      }
     }
   }
 }

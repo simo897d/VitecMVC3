@@ -8,8 +8,10 @@
 <!-- Hero section -->
 <section class="hero-section">
     <div class="hero-slider owl-carousel">
-        @foreach (var product in Model)
-        {
+        @ViewBag
+
+        @if (Model != null) {
+            foreach (var product in Model) {
             <div class="hs-item">
                 <div class="container">
                     <div class="row">
@@ -30,6 +32,7 @@
                 </div>
 
             </div>
+            }
         }
         </div>
 </section>
