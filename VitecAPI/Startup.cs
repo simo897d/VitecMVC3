@@ -27,7 +27,7 @@ namespace VitecAPI
         public void ConfigureServices(IServiceCollection services) {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<VitecAPIContext>(options =>
-            options.UseMySql(Configuration.GetConnectionString("EgebjergMySql")));
+            options.UseMySql(Configuration.GetConnectionString("EgebjergMySql"))); //Change connectionstring to "VitecAPIContext" when testing!!
 
 
         }

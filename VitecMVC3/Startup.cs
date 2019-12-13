@@ -34,8 +34,8 @@ namespace VitecMVC3 {
             });
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseMySql(
-                    Configuration.GetConnectionString("VitecMySql")));
+                options.UseMySql(                                       //Using Pomelo 2.2.0 to connect to MySQL database
+                    Configuration.GetConnectionString("VitecMySql"))); //Change connectionstring to "DefaultConnection" when testing!!
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddRoles<IdentityRole>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
