@@ -10,7 +10,7 @@ namespace VitecAPI.Models
     {
         public VitecAPIContext (DbContextOptions<VitecAPIContext> options)
             : base(options)
-        {
+        {       
         }
 
         public DbSet<VitecAPI.Models.Product> Product { get; set; }
