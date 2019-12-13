@@ -22,7 +22,7 @@ namespace VitecMVC3.Controllers
         public IActionResult BuySubscriptionPage() {
             using (HttpClient client = new HttpClient()) {
 
-                HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Subscription").Result;
+                HttpResponseMessage response = client.GetAsync("http://egebjerg.it/api/subscription").Result;
                 response.EnsureSuccessStatusCode();
                 var responseBody = response.Content.ReadAsStringAsync().Result;
 

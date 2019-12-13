@@ -8,8 +8,6 @@
 <!-- Hero section -->
 <section class="hero-section">
     <div class="hero-slider owl-carousel">
-        @ViewBag
-
         @if (Model != null) {
             foreach (var product in Model) {
             <div class="hs-item">
@@ -19,8 +17,8 @@
                             <div class="hs-text">
                                 <h2><span>@product.Title</span></h2>
                                 <p>@product.Description </p>
-                                <a href="#" class="site-btn">Køb nu</a>
-                                <a href="#" class="site-btn sb-c2">@product.Price</a>
+                                <a asp-controller="UserDashboard" asp-action="BuySubscriptionPage" class="site-btn">Køb nu</a>
+                                <a class="site-btn sb-c2">@product.Price</a>
                             </div>
                         </div>
                         <div class="col-lg-6">

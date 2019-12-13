@@ -22,7 +22,7 @@ namespace VitecMVC3.Controllers
             try {
 
                 using (HttpClient client = new HttpClient()) {
-                    HttpResponseMessage response = client.GetAsync("https://localhost:44388/api/Products").Result;
+                    HttpResponseMessage response = client.GetAsync("http://egebjerg.it/api/products").Result;
                     response.EnsureSuccessStatusCode();
                     var responseBody = response.Content.ReadAsStringAsync().Result;
 
