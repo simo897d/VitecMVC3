@@ -30,5 +30,9 @@ namespace VitecMVC3.Controllers
                 return View(model);
             }
         }
+        [AllowAnonymous]
+        public IActionResult PurchaseSubscription() {
+            return View();
+        }
     }
 }

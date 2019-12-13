@@ -21,7 +21,7 @@ namespace VitecAPI.Controllers
 
         // GET: api/Products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProduct() {
+        public async Task<ActionResult<IEnumerable<Product>>> GetProduct() {           
             return await _context.Product.ToListAsync();
         }
 
