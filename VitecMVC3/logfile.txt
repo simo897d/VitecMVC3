@@ -1,0 +1,236 @@
+2019-12-19T11:44:22
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:33
+REQUEST:
+GET - /newcss/bootstrap.min.css
+ContentType: Not specified
+Host: localhost:443002019-12-19T11:44:33
+REQUEST:
+GET - /newcss/owl.carousel.min.css
+ContentType: Not specified
+Host: localhost:443002019-12-19T11:44:34
+REQUEST:
+GET - /js/bootstrap.min.js
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:34
+REQUEST:
+GET - /js/jquery.slicknav.min.js
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:35
+REQUEST:
+GET - /js/owl.carousel.min.js
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:35
+REQUEST:
+GET - /js/mixitup.min.js
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:35
+REQUEST:
+GET - /js/main.js
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:35
+REQUEST:
+GET - /lib/jquery/dist/jquery.js
+ContentType: Not specified
+Host: localhost:443002019-12-19T11:44:36
+REQUEST:
+GET - /js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:38
+REQUEST:
+GET - /img/icons/brain.png
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:38
+REQUEST:
+GET - /img/icons/pointer.png
+ContentType: Not specified
+Host: localhost:443002019-12-19T11:44:38
+REQUEST:
+GET - /img/concept/1.jpg
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:38
+REQUEST:
+GET - /img/concept/2.jpg
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:39
+REQUEST:
+GET - /img/home/Logo.png
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:39
+REQUEST:
+GET - /img/concept/4.jpg
+ContentType: Not specified
+Host: localhost:443002019-12-19T11:44:39
+REQUEST:
+GET - /img/premium/2.jpg
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:39
+REQUEST:
+GET - /img/premium/3.jpg
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:39
+REQUEST:
+GET - /img/concept/3.jpg
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:39
+REQUEST:
+GET - /img/logo.png
+ContentType: Not specified
+Host: localhost:443002019-12-19T11:44:39
+REQUEST:
+GET - /img/icons/check-icon.png
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:39
+REQUEST:
+GET - /img/premium/4.jpg
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:39
+REQUEST:
+GET - /newcss/font-awesome.min.css
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+
+RESPONSE:
+Status Code: 200
+
+
+RESPONSE:
+Status Code: 200
+
+
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:41
+REQUEST:
+GET - /js/jquery-3.2.1.min.js
+ContentType: Not specified
+Host: localhost:443002019-12-19T11:44:41
+REQUEST:
+GET - /icon-fonts/fontawesome-webfont.woff2?v=4.7.0
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:41
+REQUEST:
+GET - /icon-fonts/fontawesome-webfont.woff?v=4.7.0
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:42
+REQUEST:
+GET - /img/how-to-bg.jpg
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:42
+REQUEST:
+GET - /icon-fonts/fontawesome-webfont.ttf?v=4.7.0
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+
+2019-12-19T11:44:42
+REQUEST:
+GET - /lib/bootstrap/dist/js/bootstrap.bundle.js
+ContentType: Not specified
+Host: localhost:443002019-12-19T11:44:42
+REQUEST:
+GET - /img/home/Cdord.jpg
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 200
+
+
+RESPONSE:
+Status Code: 200
+
+2019-12-19T11:44:43
+REQUEST:
+GET - /img/favicon.ico
+ContentType: Not specified
+Host: localhost:44300
+RESPONSE:
+Status Code: 404
+

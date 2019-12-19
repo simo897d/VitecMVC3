@@ -16,6 +16,9 @@ using Microsoft.Extensions.DependencyInjection;
 using VitecMVC3.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using VitecMVC3.Middleware;
+using Microsoft.Extensions.Options;
+using System.IO;
 
 namespace VitecMVC3 {
     public class Startup {
@@ -64,7 +67,9 @@ namespace VitecMVC3 {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseMiddleware<RequestLoggerMiddleware>(Options.Create(new MyFileLoggerOptions {
+                FileName = Path.Combine(env.ContentRootPath, "logfile.txt")
+            }));
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
