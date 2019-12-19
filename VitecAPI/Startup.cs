@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using VitecAPI.Models;
+using Microsoft.OpenApi.Models;
 
 namespace VitecAPI
 {
@@ -28,7 +29,9 @@ namespace VitecAPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<VitecAPIContext>(options =>
             options.UseMySql(Configuration.GetConnectionString("EgebjergMySql"))); //Change connectionstring to "VitecAPIContext" when testing!!
-
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Vitec API", Version = "V1" });
+            });
 
         }
 
@@ -40,7 +43,10 @@ namespace VitecAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });     
             app.UseHttpsRedirection();
             app.UseMvc();
         }
